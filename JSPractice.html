@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HomeWork </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id = "main">
+    <div>
+        <input id="answer" type="text" />
+        <p id="inc">asd</p></div>
+    <div>
+        <input class="button" type="button" onclick="increment()" />
+        <input class="button" type="button" onclick="decrement()" />
+
+    </div>
+</body>
+</html>
+
+<script>
+
+	function loadNewScript(src){
+		return new Promise(function(resolve, reject){
+			let script = document.createElement('script');
+			script.src = src;
+
+			script.onload = () => resolve(null, script);
+			script.onerror = () => reject(new Error(`Script download error! ${src}`));
+
+			document.head.append(script);
+		})
+	}
+
+	let promise = loadNewScript('scripts.js');//MyScript.js
+	promise.then(
+		function(result){
+			createDiv();
+		})
+
+	promise.catch(alert);
+
+</script>
