@@ -7,19 +7,20 @@
 	<title>HomeWork </title>
 </head>
 <body id = "main">
-    <div>
+    <div class="container">
         <h1>Счетчик</h1>
-        <div id="CounterResult" style="background-color: red;">
+        <div id="CounterResult" ">
             <p>Результат</p>
-            <div id="inc" >asd</div>
+			<div>
+				<p id="inc">asd</p>
+			</div>
         </div>
         <div>
-            <button id="bInc" class="button" onclick="increment()">➕</button> 
-            <button id="bDec" class="button" onclick="decrement()">➖</button>
-
+            <button id="bDec" class="button b_right" onclick="decrement()">➖</button>
+            <button id="bInc" class="button b_left" onclick="increment()">➕</button> 
         </div>
         <div id="alarm" hidden="true">
-            <h3>вы достигли экстремального значения</h3>
+            <p>вы достигли экстремального значения</p>
         </div>
     </div>
 </body>

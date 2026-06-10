@@ -1,11 +1,49 @@
-/* body{
-    background-image: linear-gradient( to right,  );
-} */
-
-#answer {
-    width:150px;
+body{
+    background-image: linear-gradient(to right, #04830a, 25%, #ddaf91, 75%, #939605);
 }
 
+#CounterResult{
+    background-color: red;
+    height: 60px;
+    width: 210px;
+    margin: auto;
+}
+
+#CounterResult p{
+    color: darkblue;
+    line-height: 20px;
+    font-size: 20px;
+
+}
+
+#inc{
+    margin-bottom: 5px;
+}
+
+#alarm p{
+    color: maroon;
+    font-size: 25px;
+}
+
+.container{
+    text-align: center;
+    font-weight: bold;
+    width: 250px;
+    height: 400px;
+    margin: 15% auto;
+}
+
+
 .button {
-    width:150px;
+    width:100px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.b_right{
+    background-image: linear-gradient(to right, #7ad17e, 85%, red);
+}
+
+.b_left{
+    background-image: linear-gradient(to right, red, 15%,  #cbcd6e);
 }
